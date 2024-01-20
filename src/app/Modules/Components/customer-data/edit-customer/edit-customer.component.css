@@ -1,0 +1,33 @@
+.mat-elevation-z4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headrace {
+    background-color: rgb(55, 70, 154);
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-text {
+    margin: 10;
+    padding: 10px;
+    font-size: 2.5em;
+    color: black;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.mat-form-field {
+    margin-right: 16px;
+}
+
+.row .mat-form-field:last-child {
+    margin-right: 0;
+}

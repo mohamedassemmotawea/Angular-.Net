@@ -1,0 +1,12 @@
+@import '@mdi/font/css/materialdesignicons.min.css';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+table {
+    width: 100%;
+}
+
+.header {
+    background-color: #5221f3;
+    color: rgb(9, 8, 8);
+}
+
+

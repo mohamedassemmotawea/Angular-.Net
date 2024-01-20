@@ -1,0 +1,56 @@
+<!-- app.component.html -->
+<div class="mat-elevation-z4">
+    <div class="headrace">
+        <h2 class="header-text">جديد</h2>
+    </div>
+    <br>
+    <!-- Row 1 -->
+    <div class="row" [formGroup]="customerForm">
+        <mat-form-field class="example-full-width" matTooltip="عنوان المكالمة" formControlName="Call_Location"
+            appearance="fill">
+            <mat-label>عنوان المكالمة</mat-label>
+            <input matInput placeholder="عنوان المكالمة">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" matTooltip="التوصيف" appearance="fill">
+            <mat-label>التوصيف</mat-label>
+            <input matInput placeholder="التوصيف" formControlName="description">
+        </mat-form-field>
+    </div>
+
+    <div class="row">
+        <mat-form-field class="example-full-width" matTooltip="المشروع" formControlName="project" appearance="fill">
+            <mat-label>المشروع</mat-label>
+            <input matInput placeholder="المشروع">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput [matDatepicker]="InsertDate" placeholder="التاريخ" formControlName="InsertDate">
+            <mat-datepicker-toggle matSuffix [for]="InsertDate"></mat-datepicker-toggle>
+            <mat-datepicker #InsertDate></mat-datepicker>
+        </mat-form-field>
+
+    </div>
+
+    <div class="row">
+        <mat-form-field class="example-full-width" matTooltip="نوع المكالمة" formControlName="Call_Type"
+            appearance="fill">
+            <mat-label>نوع المكالمة</mat-label>
+            <input matInput placeholder="نوع المكالمة">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" matTooltip="الموظف" formControlName="Employee" appearance="fill">
+            <mat-label>الموظف</mat-label>
+            <input matInput placeholder="الموظف " formControlName="Employee">
+        </mat-form-field>
+    </div>
+
+    <div class="row">
+        <mat-checkbox formControlName="Done">هل تمت</mat-checkbox>
+    </div>
+
+    <div class="row">
+        <button mat-raised-button color="accent" (click)="cancel()">إلغاء</button>
+        <button mat-raised-button matTooltip="إضافة" color="primary" (click)="save()">تسجيل</button>
+    </div>
+</div>
